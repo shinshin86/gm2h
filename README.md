@@ -8,6 +8,12 @@ This program that automatically converts markdown files to HTML files when they 
 ## Demo
 ![Demo](./images/demo.gif)
 
+## Install
+
+```sh
+cargo install --git https://github.com/shinshin86/gm2h.git
+```
+
 ## Usage
 
 ```sh
@@ -26,3 +32,9 @@ directory can also be specified for use. See `--help` for details.
 ```sh
 gm2h --help
 ```
+
+## License
+[MIT](https://github.com/shinshin86/gm2h/blob/main/LICENSE)
+
+## Author
+[Yuki Shindo](https://shinshin86.com/en)
