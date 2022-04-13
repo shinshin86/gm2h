@@ -9,3 +9,5 @@ edition = "2021"
 pulldown-cmark = "0.9.1"
 notify = "4.0.16"
 clap = { version = "3.1.8", features = ["derive"] }
+handlebars = "4.2.2"
+serde_json = "1.0.79"
