@@ -33,6 +33,37 @@ directory can also be specified for use. See `--help` for details.
 gm2h --help
 ```
 
+## Use template file
+gm2h supports [Handlebars](https://handlebarsjs.com).
+
+
+As an example, create a template like this Write `{{{html}}}` where you want to embed the generated HTML.
+
+The filename extension must be `hbs`.
+
+example: `template.hbs`
+
+```hbs
+<!doctype html>
+<html>
+  <head>
+    <title>Template sample</title>
+  </head>
+  <body>
+    {{{html}}}
+  </body>
+</html>
+```
+
+Optionally specify the file path of the template file you created.
+
+```sh
+gm2h -t=template.hbs
+```
+
+### Template demo
+![Template demo](./images/template_demo.gif)
+
 ## License
 [MIT](https://github.com/shinshin86/gm2h/blob/main/LICENSE)
 
