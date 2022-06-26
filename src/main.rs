@@ -86,7 +86,7 @@ fn main() -> notify::Result<()> {
         std::process::exit(1);
     }
 
-    watcher.watch(input_dir_path, RecursiveMode::Recursive)?;
+    watcher.watch(input_dir_path, RecursiveMode::NonRecursive)?;
 
     loop {
         match rx.recv() {
